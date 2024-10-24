@@ -44,7 +44,11 @@ lint = [
 build = [
     "build",
 ]
-dev = ["tox>=4", "subprocessed[test,format,type,lint,build]"]
+doc = [
+    "sphinx",
+    "sphinx-mdinclude",
+]
+dev = ["tox>=4", "subprocessed[test,format,type,lint,build,doc]"]
 
 [project.urls]
 "Homepage" = "https://github.com/gorgh/subprocessed"
