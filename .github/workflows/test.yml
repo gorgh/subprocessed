@@ -39,6 +39,9 @@ jobs:
       - name: Lint code
         run: python -m tox -e lint
 
+      - name: Build documentation
+        run: python -m tox -e doc
+
       - name: Execute tests
         run: |
           python -m tox -e py
